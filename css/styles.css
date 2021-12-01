@@ -72,9 +72,9 @@ ul {
   overflow: hidden;
 }
 
-/* WebStudio */
+/* Company logo WebStudio */
 
-.logo-link {
+.logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -83,22 +83,34 @@ ul {
   color: var(--third-text-color);
 }
 
-.studio-top {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
+.logo--theme-black {
   color: var(--primary-text-color);
 }
 
-.studio-bottom {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
+.logo--theme-white {
   color: var(--fifth-text-color);
+}
+
+/* header-nav */
+
+.header {
+  display: flex;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.header__contacts {
+  display: flex;
+  margin-left: auto;
 }
 
 /* page header */
@@ -107,48 +119,14 @@ ul {
   border-bottom: 1px solid #ececec;
 }
 
-/* header-nav */
-
-.header-nav {
-  display: flex;
-}
-
-/* main-nav */
-
-.main-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 /* site-nav */
 
-.current-decor::after {
-  position: absolute;
-  bottom: 0;
-
-  content: '';
-  display: block;
-  width: 100%;
-  height: 4px;
-
-  background: var(--bg-color-effect);
-  border-radius: 2px;
-
-  transition: width var(--transition-duration) var(--animation-timing);
-}
-
-.site-nav {
-  display: flex;
-  margin-left: 93px;
-}
-
-.site-nav-item {
+.header__item {
   position: relative;
   margin-right: 50px;
 }
 
-.site-nav-item::after {
+.header__item::after {
   position: absolute;
   bottom: 0;
 
@@ -163,16 +141,16 @@ ul {
   transition: width var(--transition-duration) var(--animation-timing);
 }
 
-.site-nav-item:hover::after,
-.site-nav-item:focus::after {
+.header__item:hover::after,
+.header__item:focus::after {
   width: 100%;
 }
 
-.site-nav-item:last-child {
+.header__item:last-child {
   margin-right: 0;
 }
 
-.site-nav-link {
+.header__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -188,37 +166,25 @@ ul {
   transition-timing-function: var(--animation-timing);
 }
 
-.site-nav-link:hover,
-.site-nav-link:focus {
+.header__link:hover,
+.header__link:focus {
   color: var(--third-text-color);
 }
 
-.current {
-  position: relative;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  color: var(--third-text-color);
+.link:hover svg,
+.link:focus svg {
+  fill: var(--bg-color-effect);
 }
 
-/* header contacts */
-
-.header-contacts {
-  display: flex;
-  margin-left: auto;
-}
-
-.header-contacts .item {
+.header__contacts .item {
   margin-right: 0;
 }
 
-.header-contacts .item + .item {
+.header__contacts .item + .item {
   margin-left: 50px;
 }
 
-.header-contacts .link {
+.header__contacts .link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -235,8 +201,8 @@ ul {
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--animation-timing);
 }
-.header-contacts .link:hover,
-.header-contacts .link:focus {
+.header__contacts .link:hover,
+.header__contacts .link:focus {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -249,20 +215,42 @@ ul {
   margin-right: 10px;
   width: 16px;
   height: 12px;
-  fill: #757575;
+  fill: var(--secodary-text-color);
 }
 
 .smartphone {
   margin-right: 10px;
   width: 10px;
   height: 16px;
-  fill: #757575;
+  fill: var(--secodary-text-color);
 }
 
-.link:hover svg,
-.link:focus svg {
-  fill: var(--bg-color-effect);
+.current-decor::after {
+  position: absolute;
+  bottom: 0;
+
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+
+  background: var(--bg-color-effect);
+  border-radius: 2px;
+
+  transition: width var(--transition-duration) var(--animation-timing);
 }
+
+.current {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--third-text-color);
+}
+
+/* header contacts */
 
 /* filter-menu */
 
@@ -969,17 +957,17 @@ img {
   position: relative;
   align-items: center;
   justify-content: center;
-  }
+}
 
 .form-input:hover,
-.form-input:focus{
-border: 1px solid var(--bg-color-effect);
-cursor: pointer;
+.form-input:focus {
+  border: 1px solid var(--bg-color-effect);
+  cursor: pointer;
 }
 
 .form-input:hover + .icon-form-input,
-.form-input:focus + .icon-form-input{
-fill:var(--bg-color-effect);
+.form-input:focus + .icon-form-input {
+  fill: var(--bg-color-effect);
 }
 
 .icon-form-input {
@@ -1016,18 +1004,18 @@ textarea {
   padding-left: 16px;
 }
 
-.textarea{
-    width: 448px;
+.textarea {
+  width: 448px;
   height: 120px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
 
 .textarea:hover,
-.textarea:focus{
-    border: 1px solid var(--bg-color-effect);
-    cursor: pointer;
-    transition: border var(--transition-duration) var(--animation-timing);
+.textarea:focus {
+  border: 1px solid var(--bg-color-effect);
+  cursor: pointer;
+  transition: border var(--transition-duration) var(--animation-timing);
 }
 
 .submit-form-button {
@@ -1071,7 +1059,7 @@ textarea {
 .checkbox {
   appearance: none;
   position: absolute;
-    transition: border-color var(--transition-duration) var(--animation-timing);
+  transition: border-color var(--transition-duration) var(--animation-timing);
 }
 
 .checkbox-custom {
@@ -1089,8 +1077,8 @@ textarea {
   border-radius: 2px;
 
   transition: border-color var(--transition-duration) var(--animation-timing),
-  background-color: var(--transition-duration) var(--animation-timing),
-  background-image: var(--transition-duration) var(--animation-timing);
+    background-color var(--transition-duration) var(--animation-timing),
+    background-image var(--transition-duration) var(--animation-timing);
 }
 
 .checkbox:checked + .checkbox-icon {
@@ -1102,11 +1090,11 @@ textarea {
 }
 
 .checkbox:hover + .checkbox-icon,
-.checkbox:focus + .checkbox-icon{
+.checkbox:focus + .checkbox-icon {
   border-color: var(--bg-color-effect);
 }
 
-.policy{
+.policy {
   color: var(--third-text-color);
   text-decoration: underline;
   text-decoration-skip-ink: none;
