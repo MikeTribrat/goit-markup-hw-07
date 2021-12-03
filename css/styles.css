@@ -623,11 +623,15 @@ img {
   display: flex;
 }
 
-.footer-contacts-item {
+.footer__address {
+  margin-top: 20px;
+}
+
+.footer-contacts__item {
   margin-top: 9px;
 }
 
-.footer-contacts .link {
+.footer-contacts__link {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -640,22 +644,16 @@ img {
   transition-timing-function: var(--animation-timing);
 }
 
-.footer-contacts .link:hover,
-.footer-contacts .link:focus {
+.footer-contacts__link:hover,
+.footer-contacts__link:focus {
   color: var(--fifth-text-color);
 }
 
-.footer-contacts .street {
-  color: var(--fifth-text-color);
-}
-
-.footer-contacts-item:first-child {
+.footer-contacts__item:first-child {
   margin-top: 0px;
 }
 
-.footer-address {
-  margin-top: 20px;
-}
+/*     342  <div class="footer-social-icon"> */
 
 .icon-social {
   height: 44px;
