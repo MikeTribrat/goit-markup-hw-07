@@ -16,7 +16,7 @@
 <body>
   <!-- Секция шапка / Page header -->
   <header class="header">
-    <div class="container header-block">
+    <div class="container header__block">
       <nav class="header-menu">
         <a href="./" class="header-menu__logo">Web<span class="header-menu__logo--theme-black">Studio</span>
         </a>
@@ -44,74 +44,75 @@
     </div>
   </header>
   <main>
-    <!-- Герой -->
-    <section class="hero overlay">
-      <div class="container">
-      <h1 class="tagline">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-      <button type="button" class="button" data-modal-open>Заказать услугу</button>
+    <!-- Секция герой / Hero section -->
+    <section class="hero hero__overlay">
+      <div class="container hero__block">
+      <h1 class="hero__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+      <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
       </div>
     </section>
-    <!-- Преимущества -->
-    <section class="section">
-      <div class="container">
-        <h2 class="visually-hidden">Наши преимущества</h2>
-        <ul class="section-list">
-          <li class="section-item">
-            <div class="icon-advantages">
+    <!-- Секция наши преимущества / Our advantages section -->
+    <section class="section advantages-section">
+      <div class="container advantages-section__block">
+        <h2 class="visually-hidden advantages-section__title">Наши преимущества</h2>
+        <ul class="advantages-section__list">
+          <li class="advantages-section__card">
+            <div class="advantages-section__icon">
               <svg width="70" height="70">
                 <use href="./images/symbol-defs.svg#icon-antenna"></use>
               </svg>
             </div>
-            <h3 class="section-sub-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-            <p class="section-sub-title-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+            <h3 class="advantages-section__sub-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+            <p class="advantages-section__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
           </li>
-          <li class="section-item">
-            <div class="icon-advantages">
+          <li class="advantages-section__card">
+            <div class="advantages-section__icon">
               <svg width="70" height="70">
                 <use href="./images/symbol-defs.svg#icon-clock"></use>
               </svg>
             </div>
-            <h3 class="section-sub-title">ПУНКТУАЛЬНОСТЬ</h3>
-            <p class="section-sub-title-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+            <h3 class="advantages-section__sub-title">ПУНКТУАЛЬНОСТЬ</h3>
+            <p class="advantages-section__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
           </li>
-          <li class="section-item">
-            <div class="icon-advantages">
+          <li class="advantages-section__card">
+            <div class="advantages-section__icon">
               <svg width="70" height="70">
                 <use href="./images/symbol-defs.svg#icon-diagram"></use>
               </svg>
             </div>
-            <h3 class="section-sub-title">ПЛАНИРОВАНИЕ</h3>
-            <p class="section-sub-title-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+            <h3 class="advantages-section__sub-title">ПЛАНИРОВАНИЕ</h3>
+            <p class="advantages-section__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
           </li>
-          <li class="section-item">
-            <div class="icon-advantages">
+          <li class="advantages-section__card">
+            <div class="advantages-section__icon">
               <svg width="70" height="70">
                 <use href="./images/symbol-defs.svg#icon-astronaut"></use>
               </svg>
             </div>
-            <h3 class="section-sub-title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
-            <p class="section-sub-title-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+            <h3 class="advantages-section__sub-title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
+            <p class="advantages-section__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
             </p>
           </li>
         </ul>
       </div>
     </section>
-      <section class="section work-section">
-        <div class="container">
-          <h2 class="section-title">Чем мы занимаемся</h2>
-            <ul class="section-list-images">
-              <li class="section-item">
-                <img src="./images/img.jpg" width="370" alt="keyboard">
-                <div class="product-overlay">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</div>
-              </li>
-              <li class="section-item">
-                <img src="./images/img(1).jpg" width="370" alt="notebook">
-                <div class="product-overlay">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</div>
-              </li>
-              <li class="section-item">
-                <img src="./images/img(2).jpg" width="370" alt="ipad">
-                <div class="product-overlay">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</div>
-              </li>
+    <!-- Секция чем мы занимаемся / What we do section -->
+    <section class="section work-section">
+      <div class="container work-section__block">
+        <h2 class="work-section__title">Чем мы занимаемся</h2>
+          <ul class="work-section__list">
+            <li class="work-section__card">
+              <img class="work-section__img" src="./images/img.jpg" width="370" alt="keyboard">
+              <div class="work-section__overlay">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</div>
+            </li>
+            <li class="work-section__card">
+              <img class="work-section__img" src="./images/img(1).jpg" width="370" alt="notebook">
+              <div class="work-section__overlay">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</div>
+            </li>
+            <li class="work-section__card">
+              <img class="work-section__img" src="./images/img(2).jpg" width="370" alt="ipad">
+              <div class="work-section__overlay">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</div>
+            </li>
           </ul>
         </div>
       </section>
@@ -343,32 +344,33 @@
         </ul>
       </address>
       </div>
-      <div class="footer-social-icon">
-        <h2 class="joinup">ПРИСОЕДИНЯЙТЕСЬ</h2>
-        <ul class="footer-icons">
-          <li class="footer-social-list">
-            <a href="" class="icon-social">
+      <!-- Footer social net / Футер соц сети -->
+      <div class="footer-social-net__block">
+        <h2 class="footer-social-net__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+        <ul class="footer-social-net__list">
+          <li class="footer-social-net__item">
+            <a href="" class="footer-social-net__link">
               <svg width="20" height="20">
               <use href="./images/symbol-defs.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
-          <li class="footer-social-list">
-            <a href="" class="icon-social">
+          <li class="footer-social-net__item">
+            <a href="" class="footer-social-net__link">
               <svg width="20" height="20">
               <use href="./images/symbol-defs.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
-          <li class="footer-social-list">
-            <a href="" class="icon-social">
+          <li class="footer-social-net__item">
+            <a href="" class="footer-social-net__link">
               <svg width="20" height="20">
               <use href="./images/symbol-defs.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
-          <li class="footer-social-list">
-            <a href="" class="icon-social">
+          <li class="footer-social-net__item">
+            <a href="" class="footer-social-net__link">
               <svg width="20" height="20">
               <use href="./images/symbol-defs.svg#icon-linkedin"></use>
               </svg>
@@ -376,18 +378,17 @@
           </li>
         </ul>
       </div>
+      <!-- Footer subsribe form / Футер секция подписка -->
       <form class="footer-subscribe">
-        <h2 class="joinup">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
-        <ul class="footer-icons">
-          <li class="subscribe-list">
-            <input type="email" class="subscribe-input" placeholder="E-mail" name="mail" id="mail" />
-              <button class="button-subscribe" type="submit">Подписаться
-              <svg class="icon-send" width="24" height="24">
+        <h2 class="footer-subscribe__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+          <p class="footer-subscribe__item">
+            <input type="email" class="footer-subscribe__input" placeholder="E-mail" name="mail" id="mail" />
+              <button class="footer-subscribe__button" type="submit">Подписаться
+              <svg class="footer-subscribe__svg--send" width="24" height="24">
               <use href="./images/symbol-defs.svg#icon-send"></use>
               </svg>
             </button>
-          </li>
-        </ul>
+          </p>
       </form>
     </div>
   </footer>

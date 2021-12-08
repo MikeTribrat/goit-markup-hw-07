@@ -34,6 +34,11 @@ a {
   text-decoration: none;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -106,7 +111,7 @@ ul {
   border-bottom: 1px solid #ececec;
 }
 
-.header-block {
+.header__block {
   display: flex;
 }
 
@@ -284,7 +289,7 @@ ul {
   margin-right: 0;
 }
 
-/* hero-section */
+/* Секция герой / Hero section */
 
 .hero {
   padding-top: 200px;
@@ -294,7 +299,19 @@ ul {
   text-align: center;
 }
 
-.hero .tagline {
+.hero__overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/img\(16\).jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__title {
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -305,7 +322,7 @@ ul {
   color: var(--fifth-text-color);
 }
 
-.button {
+.hero__button {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 32px;
@@ -323,34 +340,96 @@ ul {
   transition-timing-function: var(--animation-timing);
 }
 
-.button:hover,
-.button:focus {
+.hero__button:hover,
+.hero__button:focus {
   background: var(--fourth-bg-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
 
-/* Overlays */
+/* Секция наши преимущества / Our advantages section */
 
-.overlay {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/img\(16\).jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.advantages-section__title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--primary-text-color);
 }
 
-/* Продукты */
+.advantages-section__list {
+  display: flex;
+}
 
-.section-item {
+.advantages-section__card {
   position: relative;
 }
 
-.product-overlay {
+.advantages-section__card + .advantages-section__card {
+  margin-left: 30px;
+}
+
+.advantages-section__icon {
+  margin-bottom: 30px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--third-bg-color);
+  border-radius: 4px;
+}
+
+.advantages-section__sub-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--primary-text-color);
+}
+
+.advantages-section__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 270px;
+  height: 75px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secodary-text-color);
+}
+
+/* Секция чем мы занимаемся / What we do section */
+
+.work-section {
+  padding-top: 0;
+}
+
+.work-section__title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--primary-text-color);
+}
+
+.work-section__list {
+  display: flex;
+}
+
+.work-section__card {
+  position: relative;
+}
+
+.work-section__card + .work-section__card {
+  margin-left: 30px;
+}
+
+.work-section__overlay {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -369,84 +448,18 @@ ul {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
 }
 
-img {
+.work-section__img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* Преимущества */
+/*-----------------------*/
 
-.icon-advantages {
-  margin-bottom: 30px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: var(--third-bg-color);
-  border-radius: 4px;
-}
-
-.box {
-  margin-left: 30px;
-  margin-bottom: 30px;
-  border: transparent;
-  width: 270px;
-  height: 120px;
-  background: var(--third-bg-color);
-  border-radius: 4px;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.work-section {
-  padding-top: 0;
-}
-
-.section-list {
-  display: flex;
-}
-
-.section-list-images {
-  display: flex;
-}
-
-.section-item + .section-item {
-  margin-left: 30px;
-}
-
-.section-title {
-  margin-bottom: 50px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  color: var(--primary-text-color);
-}
-
-.section-sub-title {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  color: var(--primary-text-color);
-}
-
-.section-sub-title-text {
-  margin-top: 0;
-  margin-bottom: 0;
-  width: 270px;
-  height: 75px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--secodary-text-color);
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Секция команда / Team section */
@@ -636,9 +649,36 @@ img {
   margin-top: 0px;
 }
 
-/*     342  <div class="footer-social-icon"> */
+/* Footer social net / Футер соц сети */
 
-.icon-social {
+.footer-social-net__block {
+  margin-left: 70px;
+}
+
+.footer-social-net__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--fifth-text-color);
+}
+
+.footer-social-net__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-net__item {
+  margin-right: 10px;
+}
+
+.footer-social-net__item:last-child {
+  margin-right: 0px;
+}
+
+.footer-social-net__link {
   height: 44px;
   width: 44px;
   display: flex;
@@ -651,31 +691,19 @@ img {
   transition: background-color var(--transition-duration) var(--animation-timing);
 }
 
-.icon-social:hover,
-.icon-social:focus {
+.footer-social-net__link:hover,
+.footer-social-net__link:focus {
   background-color: var(--bg-color-effect);
   border-radius: 50%;
 }
 
-.footer-social-list {
-  margin-right: 10px;
+/* Footer subsribe form / Футер секция подписка */
+
+.footer-subscribe {
+  margin-left: 93px;
 }
 
-.footer-social-list:last-child {
-  margin-right: 0px;
-}
-
-.footer-social-icon {
-  margin-left: 70px;
-}
-
-.footer-icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.joinup {
+.footer-subscribe__title {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -684,17 +712,23 @@ img {
   color: var(--fifth-text-color);
 }
 
-/* footer subsribe form */
-
-.subscribe-list {
+.footer-subscribe__item {
   display: flex;
 }
 
-.footer-subscribe {
-  margin-left: 93px;
+.footer-subscribe__input {
+  letter-spacing: 0.03em;
+  padding-left: 16px;
+  margin-right: 15px;
+  width: 358px;
+  height: 50px;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: var(--fifth-text-color);
 }
 
-.button-subscribe {
+.footer-subscribe__button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -716,24 +750,12 @@ img {
   transition-timing-function: var(--animation-timing);
 }
 
-.button-subscribe:hover,
-.button-subscribe:focus {
+.footer-subscribe__button:hover,
+.footer-subscribe__button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.subscribe-input {
-  letter-spacing: 0.03em;
-  padding-left: 16px;
-  margin-right: 15px;
-  width: 358px;
-  height: 50px;
-  background-color: inherit;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  color: var(--fifth-text-color);
-}
-
-.icon-send {
+.footer-subscribe__svg--send {
   position: absolute;
   top: 13px;
   right: 28px;
