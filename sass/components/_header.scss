@@ -20,25 +20,27 @@
 .header-menu__item {
   position: relative;
   margin-right: 50px;
-}
+  &::after {
+    position: absolute;
+    bottom: 0;
 
-.header-menu__link--current-decor::after {
-  position: absolute;
-  bottom: 0;
+    content: "";
+    display: block;
+    width: 0%;
+    height: 4px;
 
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
+    background: var(--bg-color-effect);
+    border-radius: 2px;
 
-  background: var(--bg-color-effect);
-  border-radius: 2px;
-
-  transition: width var(--transition-duration) var(--animation-timing);
-}
-
-.header-menu__item:last-child {
-  margin-right: 0;
+    transition: width var(--transition-duration) var(--animation-timing);
+  }
+  &:hover::after,
+  &:focus::after {
+    width: 100%;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .header-menu__link {
@@ -55,11 +57,10 @@
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--animation-timing);
-}
-
-.header-menu__link:hover,
-.header-menu__link:focus {
-  color: var(--third-text-color);
+  &:hover,
+  &:focus {
+    color: var(--third-text-color);
+  }
 }
 
 .header-menu__link--current {
@@ -70,6 +71,19 @@
   letter-spacing: 0.02em;
 
   color: var(--third-text-color);
+  transition: width var(--transition-duration) var(--animation-timing);
+  &::after {
+    position: absolute;
+    bottom: 0;
+
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+
+    background: var(--bg-color-effect);
+    border-radius: 2px;
+  }
 }
 
 .header-contacts {
@@ -79,10 +93,9 @@
 
 .header-contacts__item {
   margin-right: 0;
-}
-
-.header-contacts__item + .header-contacts__item {
-  margin-left: 50px;
+  & + & {
+    margin-left: 50px;
+  }
 }
 
 .header-contacts__link {
@@ -95,21 +108,22 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
   color: var(--secodary-text-color);
-
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--animation-timing);
-}
-.header-contacts__link:hover,
-.header-contacts__link:focus {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  color: var(--third-text-color);
+  &:hover,
+  &:focus {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--third-text-color);
+  }
+  &:hover svg,
+  &:focus svg {
+    fill: var(--bg-color-effect);
+  }
 }
 
 .header-contacts__img--envelope {
@@ -124,9 +138,4 @@
   width: 10px;
   height: 16px;
   fill: #757575;
-}
-
-.header-contacts__link:hover svg,
-.header-contacts__link:focus svg {
-  fill: var(--bg-color-effect);
 }

@@ -15,6 +15,9 @@
 
 .footer-contacts__item {
   margin-top: 9px;
+  &:first-child {
+    margin-top: 0px;
+  }
 }
 
 .footer-contacts__link {
@@ -28,15 +31,10 @@
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--animation-timing);
-}
-
-.footer-contacts__link:hover,
-.footer-contacts__link:focus {
-  color: var(--fifth-text-color);
-}
-
-.footer-contacts__item:first-child {
-  margin-top: 0px;
+  &:hover,
+  &:focus {
+    color: var(--fifth-text-color);
+  }
 }
 
 /* Footer social net / Футер соц сети */
@@ -62,10 +60,9 @@
 
 .footer-social-net__item {
   margin-right: 10px;
-}
-
-.footer-social-net__item:last-child {
-  margin-right: 0px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
 .footer-social-net__link {
@@ -80,12 +77,11 @@
 
   transition: background-color var(--transition-duration)
     var(--animation-timing);
-}
-
-.footer-social-net__link:hover,
-.footer-social-net__link:focus {
-  background-color: var(--bg-color-effect);
-  border-radius: 50%;
+  &:hover,
+  &:focus {
+    background-color: var(--bg-color-effect);
+    border-radius: 50%;
+  }
 }
 
 /* Footer subsribe form / Футер секция подписка */
@@ -139,11 +135,10 @@
   transition-property: box-shadow;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--animation-timing);
-}
-
-.footer-subscribe__button:hover,
-.footer-subscribe__button:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .footer-subscribe__svg--send {

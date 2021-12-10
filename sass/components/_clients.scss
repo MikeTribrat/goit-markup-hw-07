@@ -17,12 +17,11 @@
   margin-left: 30px;
   width: 170px;
   height: 92px;
-}
-
-.clients-card:first-child {
-  margin-left: 0px;
-  width: 170px;
-  height: 92px;
+  &:first-child {
+    margin-left: 0px;
+    width: 170px;
+    height: 92px;
+  }
 }
 
 .clients-card__link {
@@ -34,15 +33,13 @@
   border: 1px solid var(--fifth-bg-color);
   fill: var(--fifth-bg-color);
   border-radius: 4px;
-
   transition: border var(--transition-duration) var(--animation-timing),
     fill var(--transition-duration) var(--animation-timing);
-}
-
-.clients-card__link:hover,
-.clients-card__link:focus {
-  border: 1px solid var(--bg-color-effect);
-  fill: var(--bg-color-effect);
-  border-radius: 4px;
-  cursor: pointer;
+  &:hover,
+  &:focus {
+    border: 1px solid var(--bg-color-effect);
+    fill: var(--bg-color-effect);
+    border-radius: 4px;
+    cursor: pointer;
+  }
 }

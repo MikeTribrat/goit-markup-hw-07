@@ -49,11 +49,10 @@
   transition-property: background-color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--animation-timing);
-}
-
-.hero__button:hover,
-.hero__button:focus {
-  background: var(--fourth-bg-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
+  &:hover,
+  &:focus {
+    background: var(--fourth-bg-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
 }

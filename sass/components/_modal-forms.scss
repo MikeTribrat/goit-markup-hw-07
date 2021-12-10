@@ -53,17 +53,15 @@
   border-radius: 4px;
 
   transition: border var(--transition-duration) var(--animation-timing);
-}
-
-.modal-form__input:hover,
-.modal-form__input:focus {
-  border: 1px solid var(--bg-color-effect);
-  cursor: pointer;
-}
-
-.modal-form__input:hover + .modal-form__icon,
-.modal-form__input:focus + .modal-form__icon {
-  fill: var(--bg-color-effect);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--bg-color-effect);
+    cursor: pointer;
+  }
+  &:hover + .modal-form__icon,
+  &:focus + .modal-form__icon {
+    fill: var(--bg-color-effect);
+  }
 }
 
 .modal-form__icon {
@@ -84,13 +82,12 @@
   padding-left: 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-}
-
-.modal-form__textarea:hover,
-.modal-form__textarea:focus {
-  border: 1px solid var(--bg-color-effect);
-  cursor: pointer;
-  transition: border var(--transition-duration) var(--animation-timing);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--bg-color-effect);
+    cursor: pointer;
+    transition: border var(--transition-duration) var(--animation-timing);
+  }
 }
 
 .submit-area__button {
@@ -107,11 +104,10 @@
   color: var(--fifth-text-color);
   transition: box-shadow var(--transition-duration) var(--animation-timing);
   cursor: pointer;
-}
-
-.submit-area__button:hover,
-.submit-area__button:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .modal-form__submit-area {
@@ -135,6 +131,17 @@
   appearance: none;
   position: absolute;
   transition: border-color var(--transition-duration) var(--animation-timing);
+  &:checked + .submit-area__checkbox-icon {
+    border-color: var(--bg-color-effect);
+    background-color: var(--bg-color-effect);
+    background-image: url(../images/icon-check.svg);
+    background-origin: border-box;
+    background-size: contain;
+  }
+  &:hover + .submit-area__checkbox-icon,
+  &:focus + .submit-area__checkbox-icon {
+    border-color: var(--bg-color-effect);
+  }
 }
 
 .submit-area__custom-checkbox {
@@ -154,19 +161,6 @@
   transition: border-color var(--transition-duration) var(--animation-timing),
     background-color var(--transition-duration) var(--animation-timing),
     background-image var(--transition-duration) var(--animation-timing);
-}
-
-.submit-area__checkbox:checked + .submit-area__checkbox-icon {
-  border-color: var(--bg-color-effect);
-  background-color: var(--bg-color-effect);
-  background-image: url(../images/icon-check.svg);
-  background-origin: border-box;
-  background-size: contain;
-}
-
-.submit-area__checkbox:hover + .submit-area__checkbox-icon,
-.submit-area__checkbox:focus + .submit-area__checkbox-icon {
-  border-color: var(--bg-color-effect);
 }
 
 .submit-area__policy {

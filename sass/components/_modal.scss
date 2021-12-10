@@ -48,9 +48,8 @@
   cursor: pointer;
 
   transition: fill var(--transition-duration) var(--animation-timing);
-}
-
-.modal__button--close:hover,
-.modal__button--close:focus {
-  fill: var(--bg-color-effect);
+  &:hover,
+  &:focus {
+    fill: var(--bg-color-effect);
+  }
 }

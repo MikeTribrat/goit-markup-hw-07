@@ -17,10 +17,9 @@
 
 .work-section__card {
   position: relative;
-}
-
-.work-section__card + .work-section__card {
-  margin-left: 30px;
+  & + & {
+    margin-left: 30px;
+  }
 }
 
 .work-section__overlay {
