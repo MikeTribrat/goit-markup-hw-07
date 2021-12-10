@@ -47,130 +47,133 @@
     </header>
   <main>
       <!-- Герой -->
-        <section class="section">
-          <div class="container">
-          <h1 class="visually-hidden">Наши работы</h1>
-          <ul class="filter">
-            <li class="filter-item"><button type="button" class="button">Все</button></li>
-            <li class="filter-item"><button type="button" class="button">Веб-сайты</button></li>
-            <li class="filter-item"><button type="button" class="button">Приложения</button></li>
-            <li class="filter-item"><button type="button" class="button">Дизайн</button></li>
-            <li class="filter-item"><button type="button" class="button">Маркетинг</button></li>
+      <!-- Filters menu section / Секция фильтры меню -->
+        <section class="gallery-section">
+          <div class="gallery-section__block">
+          <h1 class="gallery-section__text--hidden">Наши работы</h1>
+          <ul class="gallery-section__filters-list">
+            <li class="filters-list__item"><button type="button" class="filters-list__button">Все</button></li>
+            <li class="filters-list__item"><button type="button" class="filters-list__button">Веб-сайты</button></li>
+            <li class="filters-list__item"><button type="button" class="filters-list__button">Приложения</button></li>
+            <li class="filters-list__item"><button type="button" class="filters-list__button">Дизайн</button></li>
+            <li class="filters-list__item"><button type="button" class="filters-list__button">Маркетинг</button></li>
           </ul>
-          <ul class="gallery">
-            <li class="gallery-item">
-              <a href="" class="gallery-link">
-                <div class="gallery-image-overlay">
-                  <img class="gallery-image" src="./images/img(7).jpg" width="370" alt="Веб-сайт">
-              <div class="gallery-overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+          <!-- Gallery styles section / Секция стилей галлереи -->
+          <ul class="gallery-section__list">
+            <li class="gallery-section__card">
+              <a href="" class="card__link">
+                <div class="card-image__overlay">
+                  <img class="card__img" src="./images/img(7).jpg" width="370" alt="Веб-сайт">
+              <div class="card-image__overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
               шпионажа и атак на защищённые сервера конкурентов.</div>
                 </div>
-              <div class="gallery-name">
-                <h2 class="gallery-title">Технокряк</h2>
-                <p class="gallery-text">Веб-сайт</p>
+              <div class="card__name">
+                <h2 class="card__title">Технокряк</h2>
+                <p class="card__text">Веб-сайт</p>
               </div>
               </a>
             </li>
-            <li class="gallery-item">
-              <a href="" class="gallery-link">
-                <div class="gallery-image-overlay">
-                  <img class="gallery-image" src="./images/img(8).jpg" width="370" alt="Дизайн">
-                    <div class="gallery-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam amet ipsam voluptates enim 
+            <li class="gallery-section__card">
+              <a href="" class="card__link">
+                <div class="card-image__overlay">
+                  <img class="card__img" src="./images/img(8).jpg" width="370" alt="Дизайн">
+                    <div class="card-image__overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam amet ipsam voluptates enim 
               voluptatibus quae sapiente unde sequi! Deserunt ab ex ad officiis blanditiis dicta.</div>
                 </div>
-                <div class="gallery-name">
-                <h2 class="gallery-title">Постер New Orlean vs Golden Star</h2>
-                <p class="gallery-text">Дизайн</p>
+                <div class="card__name">
+                <h2 class="card__title">Постер New Orlean vs Golden Star</h2>
+                <p class="card__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="gallery-item">
-              <a href="" class="gallery-link">
-                <div class="gallery-image-overlay">
-                  <img src="./images/img(9).jpg" width="370" alt="Приложение">
-                    <div class="gallery-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam amet ipsam voluptates enim
+            <li class="gallery-section__card">
+              <a href="" class="card__link">
+                <div class="card-image__overlay">
+                  <img class="card__img" src="./images/img(9).jpg" width="370" alt="Приложение">
+                    <div class="card-image__overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam amet ipsam voluptates enim
               voluptatibus quae sapiente unde sequi! Deserunt ab ex ad officiis blanditiis dicta.</div>
                 </div>
-              <div class="gallery-name">
-                <h2 class="gallery-title">Ресторан Seafood</h2>
-                <p class="gallery-text">Приложение</p>
+              <div class="card__name">
+                <h2 class="card__title">Ресторан Seafood</h2>
+                <p class="card__text">Приложение</p>
             </div>
             </a>
             </li>
-            <li class="gallery-item">
-              <a href="" class="gallery-link">
-                <div class="gallery-image-overlay">
-                  <img src="./images/img(10).jpg" width="370" alt="Маркетинг">
-                    <div class="gallery-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam amet ipsam voluptates enim
+            <li class="gallery-section__card">
+              <a href="" class="card__link">
+                <div class="card-image__overlay">
+                  <img class="card__img" src="./images/img(10).jpg" width="370" alt="Маркетинг">
+                    <div class="card-image__overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam amet ipsam voluptates enim
               voluptatibus quae sapiente unde sequi! Deserunt ab ex ad officiis blanditiis dicta.</div>
                 </div>
-              <div class="gallery-name">
-                <h2 class="gallery-title">Проект Prime</h2>
-                <p class="gallery-text">Маркетинг</p>
+              <div class="card__name">
+                <h2 class="card__title">Проект Prime</h2>
+                <p class="card__text">Маркетинг</p>
               </div>
               </a>
             </li>
-            <li class="gallery-item">
-              <a href="" class="gallery-link">
-                <div class="gallery-image-overlay">
-                  <img src="./images/img(11).jpg" width="370" alt="Приложение">
-                    <div class="gallery-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam amet ipsam voluptates enim
+            <li class="gallery-section__card">
+              <a href="" class="card__link">
+                <div class="card-image__overlay">
+                  <img class="card__img" src="./images/img(11).jpg" width="370" alt="Приложение">
+                    <div class="card-image__overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam amet ipsam voluptates enim
               voluptatibus quae sapiente unde sequi! Deserunt ab ex ad officiis blanditiis dicta.</div>
                 </div>
-              <div class="gallery-name">
-                <h2 class="gallery-title">Проект Boxes</h2>
-                <p class="gallery-text">Приложение</p>
+              <div class="card__name">
+                <h2 class="card__title">Проект Boxes</h2>
+                <p class="card__text">Приложение</p>
               </div>
               </a>
             </li>
-            <li class="gallery-item">
-              <a href="" class="gallery-link">
-                <div class="gallery-image-overlay">
-                  <img src="./images/img(12).jpg" width="370" alt="Веб-сайт">
-                    <div class="gallery-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam amet ipsam voluptates enim
+            <li class="gallery-section__card">
+              <a href="" class="card__link">
+                <div class="card-image__overlay">
+                  <img class="card__img" src="./images/img(12).jpg" width="370" alt="Веб-сайт">
+                    <div class="card-image__overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam amet ipsam voluptates enim
               voluptatibus quae sapiente unde sequi! Deserunt ab ex ad officiis blanditiis dicta.</div>
                 </div>
-              <div class="gallery-name">
-                <h2 class="gallery-title">Inspiration has no Borders</h2>
-                <p class="gallery-text">Веб-сайт</p>
+              <div class="card__name">
+                <h2 class="card__title">Inspiration has no Borders</h2>
+                <p class="card__text">Веб-сайт</p>
               </div>
               </a>
             </li>
-            <li class="gallery-item">
-              <a href="" class="gallery-link">
-                <div class="gallery-image-overlay">
-                  <img src="./images/img(13).jpg" width="370" alt="Дизайн">
-                    <div class="gallery-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam amet ipsam voluptates enim
+            <li class="gallery-section__card">
+              <a href="" class="card__link">
+                <div class="card-image__overlay">
+                  <img class="card__img" src="./images/img(13).jpg" width="370" alt="Дизайн">
+                    <div class="card-image__overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam amet ipsam voluptates enim
               voluptatibus quae sapiente unde sequi! Deserunt ab ex ad officiis blanditiis dicta.</div>
                 </div>
-              <div class="gallery-name">
-                <h2 class="gallery-title">Издание Limited Editions</h2>
-                <p class="gallery-text">Дизайн</p>
+              <div class="card__name">
+                <h2 class="card__title">Издание Limited Editions</h2>
+                <p class="card__text">Дизайн</p>
               </div>
               </a>
             </li>
-            <li class="gallery-item">
-              <a href="" class="gallery-link">
-                <div class="gallery-image-overlay">
-                  <img src="./images/img(14).jpg" width="370" alt="Маркетинг">
-                    <div class="gallery-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam amet ipsam voluptates enim
+            <li class="gallery-section__card">
+              <a href="" class="card__link">
+                <div class="card-image__overlay">
+                  <img class="card__img" src="./images/img(14).jpg" width="370" alt="Маркетинг">
+                    <div class="card-image__overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam amet ipsam voluptates enim
               voluptatibus quae sapiente unde sequi! Deserunt ab ex ad officiis blanditiis dicta.</div>
                 </div>
-              <div class="gallery-name">
-                <h2 class="gallery-title">Проект LAB</h2>
-                <p class="gallery-text">Маркетинг</p>
+              <div class="card__name">
+                <h2 class="card__title">Проект LAB</h2>
+                <p class="card__text">Маркетинг</p>
               </div>
               </a>
             </li>
-            <li class="gallery-item"><a href="" class="gallery-link">
-                <div class="gallery-image-overlay">
-                  <img src="./images/img(15).jpg" width="370" alt="Приложение">
-              <div class="gallery-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam amet ipsam voluptates enim
+            <li class="gallery-section__card">
+              <a href="" class="card__link">
+                <div class="card-image__overlay">
+                  <img class="card__img" src="./images/img(15).jpg" width="370" alt="Приложение">
+              <div class="card-image__overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam amet ipsam voluptates enim
               voluptatibus quae sapiente unde sequi! Deserunt ab ex ad officiis blanditiis dicta.</div>
                 </div>
-              <div class="gallery-name">
-                <h2 class="gallery-title">Growing Business</h2>
-                <p class="gallery-text">Приложение</p>
+              <div class="card__name">
+                <h2 class="card__title">Growing Business</h2>
+                <p class="card__text">Приложение</p>
               </div>
               </a>
             </li>
