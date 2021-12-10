@@ -392,62 +392,61 @@
       </form>
     </div>
   </footer>
-    <div class="backdrop is-hidden" data-modal>
+  <!-- Modal window section / Секция модальное окно -->
+    <div class="backdrop backdrop__is-hidden" data-modal>
       <div class="modal">
-        <button class="button-modal-close" data-modal-close>
+        <button class="modal__button--close" data-modal-close>
           <svg width="20" height="20">
           <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
-      <form class="form">
-        <div class="text">Оставьте свои данные, мы вам перезвоним</div>
-        <div class="form-field">
-          <label class="form-label" for="name">Имя</label>
-            <div class="input-name">
-              <input class="form-input" type="text" name="name" id="name" />
-              <svg class="icon-form-input" width="18" height="18">
+      <form class="modal-form">
+        <div class="modal-form__text">Оставьте свои данные, мы вам перезвоним</div>
+        <div class="modal-form__field">
+          <label class="modal-form__label" for="name">Имя</label>
+            <div class="modal-form__item">
+              <input class="modal-form__input" type="text" name="name" id="name" />
+              <svg class="modal-form__icon" width="18" height="18">
               <use href="./images/symbol-defs.svg#icon-person"></use>
               </svg>
             </div>
         </div>
-        <div class="form-field">
-          <label class="form-label" for="tel">Телефон</label>
-            <div class="input-name">
-              <input class="form-input" type="tel" name="tel" id="tel" />
-              <svg class="icon-form-input" width="18" height="18">
+        <div class="modal-form__field">
+          <label class="modal-form__label" for="tel">Телефон</label>
+            <div class="modal-form__item">
+              <input class="modal-form__input" type="tel" name="tel" id="tel" />
+              <svg class="modal-form__icon" width="18" height="18">
               <use href="./images/symbol-defs.svg#icon-phone"></use>
               </svg>
             </div>
         </div>
-        <div class="form-field">
-          <label class="form-label" for="mail-modal">Почта</label>
-            <div class="input-name">
-              <input class="form-input" type="email" name="mail" id="mail-modal" />
-              <svg class="icon-form-input" width="18" height="18">
+        <div class="modal-form__field">
+          <label class="modal-form__label" for="mail-modal">Почта</label>
+            <div class="modal-form__item">
+              <input class="modal-form__input" type="email" name="mail" id="mail-modal" />
+              <svg class="modal-form__icon" width="18" height="18">
               <use href="./images/symbol-defs.svg#icon-email"></use>
               </svg>
             </div>
         </div>
         <div>
-          <div class="form-label">
-            <label class="form-label" for="comment">Комментарий</label>
+          <div class="modal-form__field">
+            <label class="modal-form__label" for="comment">Комментарий</label>
           </div>
-          <div class="form-input-textarea">
-            <textarea class="textarea" name="comment" id="comment" placeholder="Введите текст"></textarea>
+          <div class="modal-form__item">
+            <textarea class="modal-form__textarea" name="comment" id="comment" placeholder="Введите текст"></textarea>
           </div>
         </div>
-      <div class="submit-form-area">
-        <div class="confirm-area">
-          <label class="checkbox-custom" for="policy">
-          <input class="form-input checkbox" type="checkbox" name="policy" value="policy" id="policy" />
-          <span class="checkbox-icon"></span>
+      <div class="modal-form__submit-area">
+        <div class="submit-area__item">
+          <label class="submit-area__custom-checkbox" for="policy">
+          <input class="submit-area__checkbox" type="checkbox" name="policy" value="policy" id="policy" />
+          <span class="submit-area__checkbox-icon"></span>
           Соглашаюсь с рассылкой и принимаю&nbsp
-          <a href="" class="policy">Условия договора</a>
+          <a href="" class="submit-area__policy">Условия договора</a>
           </label>
         </div>
-        <div class="submit-send-area">
-          <button class="submit-form-button" type="submit">Отправить</button>
-        </div>
+          <button class="submit-area__button" type="submit">Отправить</button>
       </div>
       </form>
       </div>
